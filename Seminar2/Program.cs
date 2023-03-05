@@ -21,31 +21,34 @@ Console.WriteLine($"New version of {randNumber} is {newNumber}");
 /*
 bool IsDivided(int number, int firstDivider, int secondDivider)
 {
-    if(number % firstDivider == 0 && number % secondDivider == 0) // или return number % firstDivider == 0 && number % secondDivider == 0;
-    {
-        return True;
-    }
-    else
-    {
-        return false;
-    }
+     return number % firstDivider == 0 && number % secondDivider == 0;
+
+// МОЖНО ЗАПИСАТЬ ТАК ВЕРХНЮЮ СТРОЧКУ
+//  if(number % firstDivider == 0 && number % secondDivider == 0)
+//    {
+//        return True;
+//   }
+//    else
+//    {
+//        return false;
+//   }
 }
 Console.Write("Input a number for cheking: ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number fdivider: ");
-
-
-int num = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number for cheking: ");
-int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a first divider: ");
+int div1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a second divider: ");
+int div2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(IsDivided(num, div1, div2));
 */
 
 // Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
 
+/*
 int ShowNum(int randomNum)
 {
-    int tens = number/10;
-    int ones = number %10;
+    int tens = randomNum / 10;
+    int ones = randomNum % 10;
 
 
     if (tens > ones)
@@ -58,14 +61,22 @@ int ShowNum(int randomNum)
     }
 }
 int randomNum = new Random().Next(10,100);
-Console.Write($"{randomNum} {ShoeNum (RandomNum)}");
+Console.Write($"{randomNum} {ShowNum(randomNum)}");
+*/
 
 // Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
-
-bool IsKvadrat(int num1, int num2)
+/*
+bool IsQuad(int first, int second)
 {
- return  num1 == num2 * num2 || num2 == num1 * num1; 
+if(first == second*second || second == first*first)
+{
+ return  true;
 }
-
-// void MyMethod(int number) 2 -я через цикл делить на 10 пока не станет 3 значной 
-// 3-я bool
+else return false;
+}
+Console.Write("Input a first number for cheking: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(IsQuad(num1,num2));
+*/
