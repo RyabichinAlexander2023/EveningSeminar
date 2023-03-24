@@ -63,7 +63,7 @@ int InCenter(int a)
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели,
 //и проверяет, является ли этот день выходным.
 
-
+/*
 Console.Write("enter a number from 1 to 7 : ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -73,3 +73,6 @@ bool Сalendar(int number)
     
 }
 Console.WriteLine(Сalendar(number) ? "no" : "yes");
+*/
+
+// ПЕРЕПИСАТЬ ЭТАЛЛОННОЕ РЕШЕНИЕ
